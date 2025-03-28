@@ -71,19 +71,22 @@ Invoke-WebRequest -Uri "https://drivers.certisign.com.br/midias/gerenciadores/sa
 Invoke-WebRequest -Uri "https://drivers.certisign.com.br/midias/tokens/safenet/32bits/certisign10.6-x32-10.6.exe" -OutFile "$destination\certisign10.6-x32-10.6.exe"
 Invoke-WebRequest -Uri "https://www.caixa.gov.br/Downloads/FGTS-token-conectividade/Instalador_Kriptonita_1_0_6.zip" -OutFile "$destination\Instalador_Kriptonita_1_0_6.zip"
 
+
 ping -n 3 https://github.com/SasaDermanovic/2024-Winget-Setup-Guide-Windows-10-LTSC
+
 #Invoke-WebRequest -Uri "https://github.com/SasaDermanovic/2024-Winget-Setup-Guide-Windows-10-LTSC/archive/refs/heads/main.zip" -OutFile "$destination\"
 Invoke-WebRequest -Uri "https://github.com/SasaDermanovic/2024-Winget-Setup-Guide-Windows-10-LTSC/archive/refs/heads/main.zip" `
     -OutFile "$destination\main.zip" `
     -Headers @{"User-Agent"="Mozilla/5.0"}
 
+
 ping -n 3 https://github.com/R-YaTian/LTSC-Add-MicrosoftStore-2021_2024
+
 #Invoke-WebRequest -Uri "https://github.com/R-YaTian/LTSC-Add-MicrosoftStore-2021_2024/archive/refs/heads/main.zip" -OutFile "$destination\"
 Invoke-WebRequest -Uri "https://github.com/R-YaTian/LTSC-Add-MicrosoftStore-2021_2024/archive/refs/heads/main.zip" `
     -OutFile "$destination\main.zip" `
     -Headers @{"User-Agent"="Mozilla/5.0"}
 
-    
 #Invoke-WebRequest -Uri "" -OutFile "$destination\"
 
 pause
