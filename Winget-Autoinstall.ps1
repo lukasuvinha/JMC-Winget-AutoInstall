@@ -56,6 +56,7 @@ $destination = "$env:USERPROFILE\Downloads\"
 ping -n 3 https://drivers.certisign.com.br
 
 # Baixar os arquivos
+#Invoke-WebRequest -Uri "https://github.com/thedoggybrad/Paint3DArchive/releases/download/b2/2024.2410.13017.0.AppxBundle" -OutFile "$destination\Paint3D.AppxBundle"
 Invoke-WebRequest -Uri "https://download.microsoft.com/download/4/5/9/4590E1BD-CDA7-41F1-86A1-CB8005DDDF96/PTB/SSCERuntime_x64-PTB.exe" -OutFile "$destination\SSCERuntime_x64-PTB.exe"
 Invoke-WebRequest -Uri "https://acessorias.s3.us-east-2.amazonaws.com/eContinuoSetup/eContinuo(w10x64).exe" -OutFile "$destination\eContinuo_w10x64.exe"
 Invoke-WebRequest -Uri "https://www.dominioweb.com.br/pluginDownload/dominioweb_plugin_setup.exe" -OutFile "$destination\dominioweb_plugin_setup.exe"
@@ -82,9 +83,8 @@ Invoke-WebRequest -Uri "https://github.com/R-YaTian/LTSC-Add-MicrosoftStore-2021
     -OutFile "$destination\main.zip" `
     -Headers @{"User-Agent"="Mozilla/5.0"}
 
-
 #Invoke-WebRequest -Uri "" -OutFile "$destination\"
 
 pause
 
-# Incluir: DCTFWEB, RECEITANET, GIA, SPEDFISCAL
+#.:: Incluir: DCTFWEB, RECEITANET, GIA, SPEDFISCAL
